@@ -3,25 +3,26 @@
 const ps =require("prompt-sync")
 const prompt =ps()
 
-var count =2
+var rang =2
 var scull=0
 var whileCondition = true
- var ran=Math.floor(Math.random()*count +1)
 var no = ""
 function pram() {  
- console.log(`${name}  try again pick number betwin 1 and ${count} `)
- no=prompt(`pick number betwin 1 and ${count} `)
+ console.log(`${name}  try again pick number betwin 1 and ${rang} `)
+ no=prompt(`pick number betwin 1 and ${rang} `)
 }
 
 let name=prompt ("enter your name")
 while (whileCondition) {
   if(name){
-  no=prompt(`${name} pick number betwin 1 and ${count} `)
+  
+  var ran=Math.floor(Math.random()*rang+1)
+  no=prompt(`${name} pick number betwin 1 and ${rang} `)
   var newNo=Math.floor(no)
   if (ran===newNo){
-   count ++
+   rang ++
     scull++
-    console.log( `${name} have gotten 1 p0nt you are naw in level ${count-1} and your pont is ${scull}`)
+    console.log( `${name} have gotten 1 p0nt you are naw in level ${rang-1} and your pont is ${scull}`)
   }else{
    pram()
   }
