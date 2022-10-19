@@ -8,7 +8,7 @@ var scull=0
 var whileCondition = true
 var no = ""
 function pram() {  
- console.log(`${name}  try again pick number betwin 1 and ${rang} `)
+ console.log(`${name}  try again pick number between 1 and ${rang} `)
  no=prompt(`pick number betwin 1 and ${rang} `)
 }
 
